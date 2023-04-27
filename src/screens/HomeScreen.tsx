@@ -1,14 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native';
-import React from 'react';
-import I18n from 'i18n-js';
 import { useTheme } from '@react-navigation/native';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { i18n } from '../i18n';
 
 const HomeScreen = () => {
   const { colors } = useTheme();
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <Text style={{ color: colors.text }}>{I18n.t('welcomeMessage')}</Text>
+      <Text style={{ color: colors.text }}>{i18n.t('welcomeMessage')}</Text>
     </View>
   );
 };
