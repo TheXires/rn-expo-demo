@@ -2,7 +2,7 @@ import { DarkTheme, DefaultTheme } from '@react-navigation/native';
 import * as Localization from 'expo-localization';
 import React from 'react';
 import { StatusBar, useColorScheme } from 'react-native';
-import { i18n } from './src/i18n';
+import { i18n } from './src/i18n/i18n';
 import { Navigation } from './src/navigation';
 
 export default function App() {

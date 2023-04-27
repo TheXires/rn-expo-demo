@@ -2,7 +2,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import React, { useEffect } from 'react';
 import { useColorScheme } from 'react-native';
 import { MyDarkTheme, MyLightTheme } from '../theme/colors';
-import RootStackNavigator from './MainNavigator';
+import BottomNavigator from './BottomNavigation';
 
 export const Navigation = () => {
   const scheme = useColorScheme();
@@ -13,7 +13,7 @@ export const Navigation = () => {
 
   return (
     <NavigationContainer theme={scheme === 'dark' ? MyDarkTheme : MyLightTheme}>
-      <RootStackNavigator />
+      <BottomNavigator />
     </NavigationContainer>
   );
 };
